@@ -256,6 +256,18 @@
     <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.graphics.win2d\1.2.0\lib\net6.0-windows10.0.19041.0\Microsoft.Graphics.Canvas.Interop.dll">
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.identitymodel.abstractions\6.34.0\lib\net6.0\Microsoft.IdentityModel.Abstractions.dll">
+      <PackagePath>Microsoft.IdentityModel.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.identitymodel.jsonwebtokens\6.34.0\lib\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll">
+      <PackagePath>Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.identitymodel.logging\6.34.0\lib\net6.0\Microsoft.IdentityModel.Logging.dll">
+      <PackagePath>Microsoft.IdentityModel.Logging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.identitymodel.tokens\6.34.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll">
+      <PackagePath>Microsoft.IdentityModel.Tokens.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.maui.controls.compatibility\8.0.61\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.dll</PackagePath>
     </AppxPackagedFile>
@@ -322,11 +334,20 @@
     <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.windowsappsdk\1.5.240311000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\npgsql\8.0.2\lib\net8.0\Npgsql.dll">
       <PackagePath>Npgsql.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\npgsql.entityframeworkcore.postgresql\9.0.0-preview.3\lib\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll">
       <PackagePath>Npgsql.EntityFrameworkCore.PostgreSQL.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\system.identitymodel.tokens.jwt\6.34.0\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll">
+      <PackagePath>System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\twilio\7.2.2\lib\net6.0\Twilio.dll">
+      <PackagePath>Twilio.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.maui.controls.core\8.0.61\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>

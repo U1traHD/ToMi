@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using ToMi.Model;
 using ToMi.Pages;
-using System.Linq;
+using System.Threading.Tasks;
 
 namespace ToMi.ViewModel
 {
@@ -28,31 +27,27 @@ namespace ToMi.ViewModel
 
         public ICommand NavigateCommand { get; }
         public ICommand NavigateToRegistr { get; }
+        public ICommand ForgotPasswordCommand { get; }
 
         private readonly AutorizationModel _autorizationModel;
-        private ILookup<string, string> _users;
 
-        public AutorizationVM()
+        public AutorizationVM(AutorizationDbContext dbContext)
         {
-            var dbContext = new AutorizationDbContext();
             _autorizationModel = new AutorizationModel(dbContext);
-
-            LoadUsers();
-
             NavigateCommand = new Command(OnNavigate);
             NavigateToRegistr = new Command(ToRegistration);
-        }
-
-        private async void LoadUsers()
-        {
-            _users = await _autorizationModel.GetUsersAsync();
+            ForgotPasswordCommand = new Command(ForgotPassword);
         }
 
         private async void OnNavigate()
         {
-            if (ValidateCredentials())
+            Application.Current.MainPage = new Loading();
+
+            await Task.Delay(2000);
+
+            if (await ValidateCredentialsAsync())
             {
-                await NavigateToMainPage();
+                await NavigateToProfilePage();
             }
             else
             {
@@ -60,27 +55,46 @@ namespace ToMi.ViewModel
             }
         }
 
-        private bool ValidateCredentials()
+        private async Task<bool> ValidateCredentialsAsync()
         {
-            var password = _users[PhoneNumber].FirstOrDefault();
-            return password != null && password == Password;
+            if (string.IsNullOrEmpty(Password))
+            {
+                return false;
+            }
+
+            var user = await _autorizationModel.GetUserByPhoneNumberAsync(PhoneNumber);
+            return user != null && user.password == Password;
         }
 
-        private async Task NavigateToMainPage()
+        private async Task NavigateToProfilePage()
         {
-            Application.Current.MainPage = new Loading();
-            await Task.Delay(2000);
-            Application.Current.MainPage = new MainPage();
+            var user = await _autorizationModel.GetUserByPhoneNumberAsync(PhoneNumber);
+            var profileVM = new ProfileVM
+            {
+                Name = user.name,
+                PhoneNumber = user.phone_number,
+                Address = user.address
+            };
+
+            Application.Current.MainPage = new MainPage { BindingContext = profileVM };
         }
 
         private void ShowErrorAlert()
         {
-            Application.Current.MainPage.DisplayAlert("Ошибка", "Пароль или номер телефона не верны", "ОК");
+            Application.Current.MainPage.DisplayAlert("Ошибка", "Номер телефона или пароль не верны", "ОК");
+            var autorizationPage = new Autorization();
+            autorizationPage.BindingContext = this; // Используем существующий экземпляр AutorizationVM
+            Application.Current.MainPage = autorizationPage;
         }
 
         private void ToRegistration()
         {
             Application.Current.MainPage = new Registration();
+        }
+
+        private void ForgotPassword()
+        {
+            Application.Current.MainPage = new FogetPassword();
         }
 
         private void SetValue<T>(ref T field, T value, [CallerMemberName] string propertyName = "")

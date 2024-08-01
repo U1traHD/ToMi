@@ -2,12 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToMi.Pages.Profile"
-             xmlns:VM="clr-namespace:ToMi.ViewModel"
              BackgroundColor="#f7f7f7">
-
-    <ContentPage.BindingContext>
-        <VM:ProfileVM />
-    </ContentPage.BindingContext>
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
         <Image Source="tomilogo.png" WidthRequest="200" HeightRequest="200" Margin="0, 0, 0, 20"/>

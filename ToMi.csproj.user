@@ -12,6 +12,12 @@
     <MauiXaml Update="Pages\CartPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\ChangePassword.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\FogetPassword.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\Loading.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -179,3 +179,11 @@ E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Micros
 E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Npgsql.dll
 E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tomilogo.scale-100.png
+E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ToMi.sourcelink.json
+E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.IdentityModel.Abstractions.dll
+E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.IdentityModel.Logging.dll
+E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.IdentityModel.Tokens.dll
+E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.IdentityModel.Tokens.Jwt.dll
+E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Twilio.dll

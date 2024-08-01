@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ToMi.Pages"
              x:Class="ToMi.Pages.MainPage"
+             xmlns:VM="clr-namespace:ToMi.ViewModel"
              BarBackgroundColor="#f7f7f7"
              BarTextColor="#333333"
              SelectedTabColor="#ff9900"
              UnselectedTabColor="#666666">
+    
+    <TabbedPage.BindingContext>
+        <VM:ProfileVM />
+    </TabbedPage.BindingContext>
     
     <local:ProductPage Title="Выбор товаров" BackgroundColor="#f7f7f7" />
     <local:CartPage Title="Корзина" BackgroundColor="#f7f7f7" />

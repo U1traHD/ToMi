@@ -34,6 +34,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.CartPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\CartPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\CartPage.xaml
 
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/ChangePassword.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.ChangePassword.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ChangePassword.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ChangePassword.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/FogetPassword.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.FogetPassword.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\FogetPassword.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\FogetPassword.xaml
+
 [E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/Loading.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.Loading.xaml

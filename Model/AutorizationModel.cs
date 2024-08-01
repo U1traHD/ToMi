@@ -15,14 +15,9 @@ namespace ToMi.Model
             _dbContext = dbContext;
         }
 
-        public async Task<bool> CheckCredentialsAsync(string phoneNumber, string password)
+        public async Task<User> GetUserByPhoneNumberAsync(string phoneNumber)
         {
-            return await _dbContext.users.AnyAsync(u => u.phone_number == phoneNumber && u.password == password);
-        }
-        public async Task<ILookup<string, string>> GetUsersAsync()
-        {
-            var users = await _dbContext.users.ToListAsync();
-            return users.ToLookup(u => u.phone_number, u => u.password);
+            return await _dbContext.users.FirstOrDefaultAsync(u => u.phone_number == phoneNumber);
         }
     }
 }

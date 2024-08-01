@@ -1,5 +1,9 @@
 ﻿using ToMi.Pages;
 using System.Threading.Tasks;
+using ToMi.ViewModel;
+using ToMi.Model;
+
+using Microsoft.Maui.Storage;
 
 namespace ToMi
 {
@@ -9,13 +13,16 @@ namespace ToMi
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Loading());
+            MainPage = new Loading(); // показываем страницу загрузки
 
             Task.Delay(5000).ContinueWith(async t =>
             {
                 await Device.InvokeOnMainThreadAsync(() =>
                 {
-                    MainPage = new Autorization();
+                    var autorizationModel = new AutorizationModel(new AutorizationDbContext());
+                    var autorizationVM = new AutorizationVM(new AutorizationDbContext());
+
+                    Application.Current.MainPage = new Autorization { BindingContext = autorizationVM }; // показываем страницу авторизации
                 });
             });
         }

@@ -87,22 +87,6 @@ namespace ToMi.ViewModel
             RegisterCommand = new Command(RegisterUser);
             NavigateToAutorization = new Command(NavigateCommand);
             IsEnabled = false;
-
-            Names.Add("Иван");
-            Names.Add("Петр");
-            Names.Add("Михаил");
-
-            LastNames.Add("Иванов");
-            LastNames.Add("Петров");
-            LastNames.Add("Михайлов");
-
-            MiddleNames.Add("Иванович");
-            MiddleNames.Add("Петрович");
-            MiddleNames.Add("Михайлович");
-
-            Addresses.Add("Москва");
-            Addresses.Add("Санкт-Петербург");
-            Addresses.Add("Новосибирск");
         }
 
         private void RegisterUser()
@@ -164,7 +148,9 @@ namespace ToMi.ViewModel
             if (!_errorShown)
             {
                 await Application.Current.MainPage.DisplayAlert("Успешно", "Пользователь зарегистрирован", "ОК");
-                await Task.Delay(1000);
+                await Task.Delay(800);
+                Application.Current.MainPage = new Loading();
+                await Task.Delay(1500);
                 Application.Current.MainPage = new Autorization();
             }
             _errorShown = false;
