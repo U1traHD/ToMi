@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ToMi.Pages"
+             x:Class="ToMi.Pages.MainPage"
+             BarBackgroundColor="#f7f7f7"
+             BarTextColor="#333333"
+             SelectedTabColor="#ff9900"
+             UnselectedTabColor="#666666">
+    
+    <local:ProductPage Title="Выбор товаров" BackgroundColor="#f7f7f7" />
+    <local:CartPage Title="Корзина" BackgroundColor="#f7f7f7" />
+    <local:Profile Title="Профиль" BackgroundColor="#f7f7f7" />
+
+</TabbedPage>

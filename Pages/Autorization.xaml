@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToMi.Pages.Autorization"
+             xmlns:Control="clr-namespace:ToMi.Controilers"
+             xmlns:VM="clr-namespace:ToMi.ViewModel"
+             BackgroundColor="#f7f7f7">
+
+    <ContentPage.BindingContext>
+        <VM:AutorizationVM />
+    </ContentPage.BindingContext>
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+        <Image Source="tomilogo.png" WidthRequest="250" HeightRequest="250" Margin="0, 0, 0, 20"/>
+
+        <Label Text="Приятного аппетита с ToMi!"
+               FontSize="24"
+               FontAttributes="Bold"
+               Margin="0, 0, 0, 10"
+               HorizontalTextAlignment="Center"
+               TextColor="#333333"/>
+
+        <Label Text="Авторизуйтесь, чтобы заказать вашу любимую еду"
+               FontSize="16"
+               Margin="0, 0, 0, 20"
+               HorizontalTextAlignment="Center"
+               TextColor="#666666"/>
+
+        <Frame CornerRadius="10" BackgroundColor="White" Padding="10" HasShadow="True">
+            <StackLayout>
+                <Entry Placeholder="Введите номер телефона"
+                       WidthRequest="220"
+                       Keyboard="Telephone"
+                       Text="{Binding PhoneNumber}"
+                       TextColor="#333333">
+                    <Entry.Behaviors>
+                        <Control:NumericValidationBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Entry Placeholder="Введите пароль"
+                       IsPassword="True" 
+                       WidthRequest="220" 
+                       Text="{Binding Password}"
+                       TextColor="#333333"
+                       Completed="Password_Entry_Complete"/>
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Войти"
+                WidthRequest="120"
+                Margin="0, 20, 0, 0" 
+                BackgroundColor="#ff9900"
+                TextColor="White"
+                Command="{Binding NavigateCommand}"/>
+
+        <Label Text="Нет аккаунта? "
+               FontSize="16"
+               Margin="0, 10, 0, 5"
+               HorizontalTextAlignment="Center"
+               TextColor="#333333"/>
+
+        <Button Text="Зарегистрироваться"
+                WidthRequest="170"
+                Margin="0, 0, 0, 0"
+                BackgroundColor="#f7f7f7"
+                BorderColor="#ff9900"
+                BorderWidth="1"
+                TextColor="#ff9900"
+                Command="{Binding NavigateToRegistr}"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToMi.Pages.Profile"
+             xmlns:VM="clr-namespace:ToMi.ViewModel"
+             BackgroundColor="#f7f7f7">
+
+    <ContentPage.BindingContext>
+        <VM:ProfileVM />
+    </ContentPage.BindingContext>
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+        <Image Source="tomilogo.png" WidthRequest="200" HeightRequest="200" Margin="0, 0, 0, 20"/>
+
+        <Label Text="Ваш профиль"
+               FontSize="24"
+               FontAttributes="Bold"
+               Margin="0, 0, 0, 10"
+               HorizontalTextAlignment="Center"
+               TextColor="#333333"/>
+
+        <Label Text="Информация о вашем аккаунте"
+               FontSize="16"
+               Margin="0, 0, 0, 20"
+               HorizontalTextAlignment="Center"
+               TextColor="#666666"/>
+
+        <Frame CornerRadius="10" BackgroundColor="White" Padding="10" HasShadow="True">
+            <StackLayout>
+                <Label Text="Имя:"
+                       FontSize="16"
+                       Margin="0, 0, 0, 5"
+                       TextColor="#333333"/>
+                <Label Text="{Binding Name}"
+                       FontSize="16"
+                       Margin="0, 0, 0, 10"
+                       TextColor="#666666"/>
+
+                <Label Text="Номер телефона:"
+                       FontSize="16"
+                       Margin="0, 0, 0, 5"
+                       TextColor="#333333"/>
+                <Label Text="{Binding PhoneNumber}"
+                       FontSize="16"
+                       Margin="0, 0, 0, 10"
+                       TextColor="#666666"/>
+
+                <Label Text="Адрес:"
+                       FontSize="16"
+                       Margin="0, 0, 0, 5"
+                       TextColor="#333333"/>
+                <Label Text="{Binding Address}"
+                       FontSize="16"
+                       Margin="0, 0, 0, 10"
+                       TextColor="#666666"/>
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Редактировать профиль"
+                WidthRequest="170"
+                Margin="0, 20, 0, 0" 
+                BackgroundColor="#ff9900"
+                TextColor="White"
+                Command="{Binding EditProfileCommand}"/>
+
+        <Button Text="Выйти из аккаунта"
+                WidthRequest="170"
+                Margin="0, 10, 0, 0"
+                BackgroundColor="#f7f7f7"
+                BorderColor="#ff9900"
+                BorderWidth="1"
+                TextColor="#ff9900"
+                Command="{Binding LogoutCommand}"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ToMi
+build_property.ProjectDir = E:\Codes\C#\MYUI\ToMi\ToMi\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/Autorization.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.Autorization.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Autorization.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Autorization.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/CartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.CartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CartPage.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/Loading.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.Loading.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Loading.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Loading.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/ProductPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.ProductPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ProductPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ProductPage.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/Profile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.Profile.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Pages/Registration.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Pages.Registration.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Registration.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Registration.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/Codes/C\#/MYUI/ToMi/ToMi/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToMi.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

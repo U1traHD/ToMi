@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToMi.Pages.ProductPage"
+             Title="Меню"
+             xmlns:Control="clr-namespace:ToMi.Controilers"
+             xmlns:VM="clr-namespace:ToMi.ViewModel"
+             BackgroundColor="#f7f7f7">
+
+    <!--<ContentPage.BindingContext>
+        <VM:MenuVM />
+    </ContentPage.BindingContext>-->
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+        <Image Source="tomilogo.png" WidthRequest="250" HeightRequest="250" Margin="0, 0, 0, 20"/>
+
+        <Label Text="Наше меню"
+               FontSize="24"
+               FontAttributes="Bold"
+               Margin="0, 0, 0, 10"
+               HorizontalTextAlignment="Center"
+               TextColor="#333333"/>
+
+        <Label Text="Выберите блюдо"
+               FontSize="16"
+               Margin="0, 0, 0, 20"
+               HorizontalTextAlignment="Center"
+               TextColor="#666666"/>
+
+        <Frame CornerRadius="10" BackgroundColor="White" Padding="10" HasShadow="True">
+            <StackLayout>
+                <CollectionView ItemsSource="{Binding MenuItems}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}" FontSize="16" TextColor="#333333"/>
+                                    <Label Text="{Binding Description}" FontSize="14" TextColor="#666666"/>
+                                    <Label Text="{Binding Price}" FontSize="14" TextColor="#ff9900"/>
+                                </StackLayout>
+                                <Button Text="Добавить в корзину" WidthRequest="120" BackgroundColor="#ff9900" TextColor="White" Command="{Binding AddToCartCommand}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

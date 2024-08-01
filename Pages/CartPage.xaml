@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToMi.Pages.CartPage"
+             Title="Корзина"
+             xmlns:Control="clr-namespace:ToMi.Controilers"
+             xmlns:VM="clr-namespace:ToMi.ViewModel"
+             BackgroundColor="#f7f7f7">
+
+    <!--<ContentPage.BindingContext>
+        <VM:CardVM />
+    </ContentPage.BindingContext>-->
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+        <Image Source="tomilogo.png" WidthRequest="250" HeightRequest="250" Margin="0, 0, 0, 20"/>
+
+        <Label Text="Ваша корзина"
+               FontSize="24"
+               FontAttributes="Bold"
+               Margin="0, 0, 0, 10"
+               HorizontalTextAlignment="Center"
+               TextColor="#333333"/>
+
+        <Label Text="Проверьте ваш заказ"
+               FontSize="16"
+               Margin="0, 0, 0, 20"
+               HorizontalTextAlignment="Center"
+               TextColor="#666666"/>
+
+        <Frame CornerRadius="10" BackgroundColor="White" Padding="10" HasShadow="True">
+            <StackLayout>
+                <CollectionView ItemsSource="{Binding CartItems}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Image}" WidthRequest="50" HeightRequest="50"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}" FontSize="16" TextColor="#333333"/>
+                                    <Label Text="{Binding Price}" FontSize="14" TextColor="#666666"/>
+                                </StackLayout>
+                                <Button Text="Удалить" WidthRequest="80" BackgroundColor="#ff9900" TextColor="White" Command="{Binding RemoveCommand}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Оформить заказ"
+                WidthRequest="170"
+                Margin="0, 20, 0, 0" 
+                BackgroundColor="#ff9900"
+                TextColor="White"
+                Command="{Binding CheckoutCommand}"/>
+
+        <Label Text="Итого: {Binding TotalPrice}"
+               FontSize="16"
+               Margin="0, 10, 0, 5"
+               HorizontalTextAlignment="Center"
+               TextColor="#333333"/>
+    </StackLayout>
+</ContentPage>
