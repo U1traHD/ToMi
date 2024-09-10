@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ToMi.Pages.Profile"
-             BackgroundColor="#f7f7f7">
+             x:Class="ToMi.Pages.Profile">
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
         <Image Source="tomilogo.png" WidthRequest="200" HeightRequest="200" Margin="0, 0, 0, 20"/>
@@ -25,7 +24,7 @@
                 <Label Text="Имя:"
                        FontSize="16"
                        Margin="0, 0, 0, 5"
-                       TextColor="#333333"/>
+                       TextColor="#333333"/> 
                 <Label Text="{Binding Name}"
                        FontSize="16"
                        Margin="0, 0, 0, 10"

@@ -11,6 +11,8 @@ namespace ToMi.ViewModel
 {
     internal class AutorizationVM : INotifyPropertyChanged
     {
+        private const int DelayMilliseconds = 2000;
+
         private string _phoneNumber;
         public string PhoneNumber
         {
@@ -29,70 +31,92 @@ namespace ToMi.ViewModel
         public ICommand NavigateToRegistr { get; }
         public ICommand ForgotPasswordCommand { get; }
 
+        private readonly AutorizationDbContext _dbContext;
         private readonly AutorizationModel _autorizationModel;
 
         public AutorizationVM(AutorizationDbContext dbContext)
         {
-            _autorizationModel = new AutorizationModel(dbContext);
-            NavigateCommand = new Command(OnNavigate);
-            NavigateToRegistr = new Command(ToRegistration);
-            ForgotPasswordCommand = new Command(ForgotPassword);
+            _dbContext = dbContext;
+            _autorizationModel = new AutorizationModel(_dbContext);
+            NavigateCommand = new Command(async () => await OnNavigateAsync());
+            NavigateToRegistr = new Command(async () => await ToRegistrationAsync());
+            ForgotPasswordCommand = new Command(async () => await ForgotPasswordAsync());
         }
 
-        private async void OnNavigate()
+        private async Task OnNavigateAsync()
         {
-            Application.Current.MainPage = new Loading();
-
-            await Task.Delay(2000);
-
+            await ShowLoadingPageAsync();
             if (await ValidateCredentialsAsync())
             {
-                await NavigateToProfilePage();
+                await NavigateToProfilePageAsync();
             }
             else
             {
-                ShowErrorAlert();
+                await ShowErrorAlertAsync();
             }
+        }
+
+        private async Task ShowLoadingPageAsync()
+        {
+            Application.Current.MainPage = new Loading();
+            await Task.Delay(DelayMilliseconds);
         }
 
         private async Task<bool> ValidateCredentialsAsync()
         {
-            if (string.IsNullOrEmpty(Password))
+            var user = await _autorizationModel.GetUserByPhoneNumberAsync(PhoneNumber);
+            return user?.password == Password;
+        }
+
+        private async Task NavigateToProfilePageAsync()
+        {
+            try
             {
-                return false;
+                if (!_dbContext.Database.CanConnect())
+                {
+                    await Application.Current.MainPage.DisplayAlert("Ошибка", "Нет соединения с базой данных.", "Ок");
+                    return;
+                }
+
+                var user = await _autorizationModel.GetUserByPhoneNumberAsync(PhoneNumber);
+                if (user == null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Ошибка", "Пользователь не найден.", "Ок");
+                    return;
+                }
+
+                var profileVM = new ProfileVM
+                {
+                    Name = user.name,
+                    PhoneNumber = user.phone_number,
+                    Address = user.address
+                };
+
+                Application.Current.MainPage = new MainPage { BindingContext = profileVM };
             }
-
-            var user = await _autorizationModel.GetUserByPhoneNumberAsync(PhoneNumber);
-            return user != null && user.password == Password;
-        }
-
-        private async Task NavigateToProfilePage()
-        {
-            var user = await _autorizationModel.GetUserByPhoneNumberAsync(PhoneNumber);
-            var profileVM = new ProfileVM
+            catch (Exception ex)
             {
-                Name = user.name,
-                PhoneNumber = user.phone_number,
-                Address = user.address
-            };
-
-            Application.Current.MainPage = new MainPage { BindingContext = profileVM };
+                await Application.Current.MainPage.DisplayAlert("Ошибка", $"{ex.Message}", "Ок");
+            }
         }
 
-        private void ShowErrorAlert()
+        private async Task ShowErrorAlertAsync()
         {
-            Application.Current.MainPage.DisplayAlert("Ошибка", "Номер телефона или пароль не верны", "ОК");
-            var autorizationPage = new Autorization();
-            autorizationPage.BindingContext = this; // Используем существующий экземпляр AutorizationVM
-            Application.Current.MainPage = autorizationPage;
+            await ShowAlertAsync("Ошибка", "Номер телефона или пароль не верны", "ОК");
+            Application.Current.MainPage = new Autorization { BindingContext = this };
         }
 
-        private void ToRegistration()
+        private async Task ShowAlertAsync(string title, string message, string cancel)
+        {
+            await Application.Current.MainPage.DisplayAlert(title, message, cancel);
+        }
+
+        private async Task ToRegistrationAsync()
         {
             Application.Current.MainPage = new Registration();
         }
 
-        private void ForgotPassword()
+        private async Task ForgotPasswordAsync()
         {
             Application.Current.MainPage = new FogetPassword();
         }

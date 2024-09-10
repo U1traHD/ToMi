@@ -35,6 +35,3 @@ E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ToMi.Ass
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ToMi.AssemblyInfo.cs
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ToMi.csproj.CoreCompileInputs.cache
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ToMi.sourcelink.json
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ToMi.dll
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\refint\ToMi.dll
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ToMi.pdb

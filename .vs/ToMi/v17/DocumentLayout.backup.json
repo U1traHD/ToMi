@@ -1,0 +1,475 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\registrationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\registrationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\radiobuttonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\radiobuttonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\convectors\\booleantocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:convectors\\booleantocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\autorizationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\autorizationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\model\\autorizationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:model\\autorizationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\profilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\profilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\fogetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\fogetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\services\\applicationcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:services\\applicationcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\fogetpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\fogetpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\changepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\changepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\changepasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\changepasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\cartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\cartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\controilers\\numericvalidationbehavior .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:controilers\\numericvalidationbehavior .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|e:\\codes\\c#\\myui\\tomi\\tomi\\pages\\loading.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6022CFAE-50E4-4E78-A132-68AB34289483}|ToMi.csproj|solutionrelative:pages\\loading.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AutorizationVM.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\AutorizationVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AutorizationVM.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\AutorizationVM.cs",
+              "RelativeToolTip": "ViewModel\\AutorizationVM.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAIcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:53:46.668Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AutorizationModel.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Model\\AutorizationModel.cs",
+              "RelativeDocumentMoniker": "Model\\AutorizationModel.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Model\\AutorizationModel.cs",
+              "RelativeToolTip": "Model\\AutorizationModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:53:18.968Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Autorization.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Autorization.xaml",
+              "RelativeDocumentMoniker": "Pages\\Autorization.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Autorization.xaml",
+              "RelativeToolTip": "Pages\\Autorization.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-26T08:18:32.686Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistrationVM.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\RegistrationVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RegistrationVM.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\RegistrationVM.cs",
+              "RelativeToolTip": "ViewModel\\RegistrationVM.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAqwHIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:02:48.311Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\MainPage.xaml.cs",
+              "RelativeToolTip": "Pages\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T18:44:22.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registration.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Registration.xaml",
+              "RelativeDocumentMoniker": "Pages\\Registration.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Registration.xaml",
+              "RelativeToolTip": "Pages\\Registration.xaml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAwwFcAAADrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-31T12:01:55.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RadioButtonViewModel.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\RadioButtonViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RadioButtonViewModel.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\RadioButtonViewModel.cs",
+              "RelativeToolTip": "ViewModel\\RadioButtonViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T18:21:17.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BooleanToColorConverter.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Convectors\\BooleanToColorConverter.cs",
+              "RelativeDocumentMoniker": "Convectors\\BooleanToColorConverter.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Convectors\\BooleanToColorConverter.cs",
+              "RelativeToolTip": "Convectors\\BooleanToColorConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T18:03:29.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registration.xaml.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Registration.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Registration.xaml.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Registration.xaml.cs",
+              "RelativeToolTip": "Pages\\Registration.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T10:50:21.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\MainPage.xaml",
+              "RelativeToolTip": "Pages\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T18:34:04.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductPage.xaml.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\ProductPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\ProductPage.xaml.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\ProductPage.xaml.cs",
+              "RelativeToolTip": "Pages\\ProductPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:49:07.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T19:44:29.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Profile.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Profile.xaml",
+              "RelativeDocumentMoniker": "Pages\\Profile.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Profile.xaml",
+              "RelativeToolTip": "Pages\\Profile.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-07T16:33:00.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProfileVM.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\ProfileVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ProfileVM.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\ProfileVM.cs",
+              "RelativeToolTip": "ViewModel\\ProfileVM.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:17:39.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:30:02.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Autorization.xaml.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Autorization.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Autorization.xaml.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Autorization.xaml.cs",
+              "RelativeToolTip": "Pages\\Autorization.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T08:54:49.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationContext .cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Services\\ApplicationContext .cs",
+              "RelativeDocumentMoniker": "Services\\ApplicationContext .cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Services\\ApplicationContext .cs",
+              "RelativeToolTip": "Services\\ApplicationContext .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:42:54.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ChangePassword.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\ChangePassword.xaml",
+              "RelativeDocumentMoniker": "Pages\\ChangePassword.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\ChangePassword.xaml",
+              "RelativeToolTip": "Pages\\ChangePassword.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-01T16:31:59.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FogetPasswordVM.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\FogetPasswordVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\FogetPasswordVM.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\FogetPasswordVM.cs",
+              "RelativeToolTip": "ViewModel\\FogetPasswordVM.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAwwGAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T16:33:42.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-01T18:55:08.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChangePasswordVM.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\ChangePasswordVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ChangePasswordVM.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\ChangePasswordVM.cs",
+              "RelativeToolTip": "ViewModel\\ChangePasswordVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T16:38:31.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\BaseViewModel.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\BaseViewModel.cs",
+              "RelativeToolTip": "ViewModel\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T17:03:15.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FogetPassword.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\FogetPassword.xaml",
+              "RelativeDocumentMoniker": "Pages\\FogetPassword.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\FogetPassword.xaml",
+              "RelativeToolTip": "Pages\\FogetPassword.xaml",
+              "ViewState": "AgIAAAsAAAAAAAAAAABRwDgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-01T16:30:21.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T18:35:31.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CartPage.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\CartPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\CartPage.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\CartPage.xaml",
+              "RelativeToolTip": "Pages\\CartPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T18:39:51.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductPage.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\ProductPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\ProductPage.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\ProductPage.xaml",
+              "RelativeToolTip": "Pages\\ProductPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T18:40:24.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Loading.xaml",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Loading.xaml",
+              "RelativeDocumentMoniker": "Pages\\Loading.xaml",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Pages\\Loading.xaml",
+              "RelativeToolTip": "Pages\\Loading.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T16:52:40.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NumericValidationBehavior .cs",
+              "DocumentMoniker": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Controilers\\NumericValidationBehavior .cs",
+              "RelativeDocumentMoniker": "Controilers\\NumericValidationBehavior .cs",
+              "ToolTip": "E:\\Codes\\C#\\MYUI\\ToMi\\ToMi\\Controilers\\NumericValidationBehavior .cs",
+              "RelativeToolTip": "Controilers\\NumericValidationBehavior .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:46:12.565Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

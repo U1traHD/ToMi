@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using ToMi.Pages;
 
 namespace ToMi.ViewModel
 {
@@ -28,7 +29,7 @@ namespace ToMi.ViewModel
         }
 
         public ICommand EditProfileCommand { get; }
-        public ICommand LogoutCommand { get; }
+        public ICommand LogoutCommand { get; set; }
 
         public ProfileVM()
         {
@@ -43,8 +44,9 @@ namespace ToMi.ViewModel
 
         private void OnLogout()
         {
-            // Логика выхода из аккаунта
+            Application.Current.MainPage = new Autorization();
         }
+    
 
         private void SetValue<T>(ref T field, T value, [CallerMemberName] string propertyName = "")
         {

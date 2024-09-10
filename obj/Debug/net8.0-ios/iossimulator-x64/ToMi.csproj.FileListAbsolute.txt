@@ -42,6 +42,3 @@ E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-ios\iossimulator-x64\ToMi.AssemblyIn
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-ios\iossimulator-x64\ToMi.AssemblyInfo.cs
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-ios\iossimulator-x64\ToMi.csproj.CoreCompileInputs.cache
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-ios\iossimulator-x64\ToMi.sourcelink.json
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-ios\iossimulator-x64\ToMi.dll
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-ios\iossimulator-x64\refint\ToMi.dll
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-ios\iossimulator-x64\ToMi.pdb

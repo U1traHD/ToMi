@@ -11,6 +11,9 @@ public partial class Autorization : ContentPage
 
     private void Password_Entry_Complete(object sender, EventArgs e)
     {
-        (BindingContext as AutorizationVM).NavigateCommand.Execute(null);
+        if (BindingContext is AutorizationVM vm)
+        {
+            vm.NavigateCommand.Execute(null);
+        }
     }
 }

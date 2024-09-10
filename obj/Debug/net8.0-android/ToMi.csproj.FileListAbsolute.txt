@@ -105,5 +105,3 @@ E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-android\ToMi.AssemblyInfoInputs.cach
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-android\ToMi.AssemblyInfo.cs
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-android\ToMi.csproj.CoreCompileInputs.cache
 E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-android\ToMi.sourcelink.json
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-android\ToMi.dll
-E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-android\ToMi.pdb
