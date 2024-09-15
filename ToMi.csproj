@@ -93,9 +93,13 @@
 	  <MauiXaml Update="Pages\Registration.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\RadioButtonStyle.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Convectors\" />
 	  <Folder Include="Resources\Images\" />
 	  <Folder Include="View\" />
 	</ItemGroup>

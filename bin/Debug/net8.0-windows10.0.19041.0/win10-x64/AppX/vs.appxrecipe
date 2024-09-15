@@ -29,13 +29,13 @@
     <AppXManifest Include="E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-09T17:38:25.913</Modified>
+      <Modified>2024-09-10T18:07:45.213</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-09T17:20:59.446</Modified>
+      <Modified>2024-09-10T17:29:47.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ToMi.runtimeconfig.json">
       <PackagePath>ToMi.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ToMi.dll">
       <PackagePath>ToMi.dll</PackagePath>
-      <Modified>2024-09-09T17:38:25.133</Modified>
+      <Modified>2024-09-10T18:07:44.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Codes\C#\MYUI\ToMi\ToMi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ToMi.exe</PackagePath>
-      <Modified>2024-09-09T17:38:25.161</Modified>
+      <Modified>2024-09-10T18:07:44.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Codes\C#\MYUI\ToMi\ToMi\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -271,7 +271,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Codes\C#\MYUI\ToMi\ToMi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ToMi.deps.json">
       <PackagePath>ToMi.deps.json</PackagePath>
-      <Modified>2024-09-09T17:20:58.902</Modified>
+      <Modified>2024-09-10T17:29:47.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\focus\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

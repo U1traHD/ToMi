@@ -3,6 +3,8 @@
              x:Class="ToMi.Pages.Registration"
              xmlns:Control="clr-namespace:ToMi.Controilers"
              xmlns:VM="clr-namespace:ToMi.ViewModel"
+             xmlns:local="clr-namespace:ToMi"
+             Resources="{StaticResource RadioButtonStyle}"
              BackgroundColor="#F7F7F7">
 
     <ContentPage.BindingContext>
@@ -84,8 +86,8 @@
             </Frame>
 
             <StackLayout Orientation="Horizontal" Margin="0, 20, 0, 0">
-                <RadioButton Content="Я клиент" GroupName="UserType" IsChecked="{Binding SelectedRole, Converter={StaticResource BooleanToColorConverter}, ConverterParameter='Я клиент'}" FontFamily="Roboto" TextColor="#333333" />
-                <RadioButton Content="Я сотрудник" GroupName="UserType" IsChecked="{Binding SelectedRole, Converter={StaticResource BooleanToColorConverter}, ConverterParameter='Я сотрудник'}" FontFamily="Roboto" TextColor="#333333" />
+                <RadioButton Content="Я клиент" GroupName="UserType" IsChecked="{Binding IsClientCheked}" FontFamily="Roboto" TextColor="#333333" />
+                <RadioButton Content="Я сотрудник" GroupName="UserType" IsChecked="{Binding IsEmployeeChecked}" FontFamily="Roboto" TextColor="#333333" />
             </StackLayout>
 
             <Button Text="Зарегистрироваться"

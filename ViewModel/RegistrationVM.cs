@@ -1,13 +1,10 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
-using System.Collections.ObjectModel;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Windows.Input;
 using Microsoft.EntityFrameworkCore;
 using ToMi.Pages;
 using ToMi.Model;
 using System.ComponentModel;
+using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
 
 namespace ToMi.ViewModel
 {
@@ -22,6 +19,8 @@ namespace ToMi.ViewModel
         private string _repeatPassword;
         private bool _isEnabled;
         private string _selectedRole;
+        private bool _isClientCheked;
+        private bool _isEmployeeChecked;
 
         public ObservableCollection<string> Roles { get; set; } = new ObservableCollection<string>
         {
@@ -36,7 +35,7 @@ namespace ToMi.ViewModel
             {
                 _firstName = value;
                 OnPropertyChanged();
-                CheckFields();
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(MiddleName) && !string.IsNullOrEmpty(Address) && !string.IsNullOrEmpty(PhoneNumber) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(RepeatPassword) && !string.IsNullOrEmpty(SelectedRole);
             }
         }
 
@@ -47,7 +46,7 @@ namespace ToMi.ViewModel
             {
                 _lastName = value;
                 OnPropertyChanged();
-                CheckFields();
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(MiddleName) && !string.IsNullOrEmpty(Address) && !string.IsNullOrEmpty(PhoneNumber) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(RepeatPassword) && !string.IsNullOrEmpty(SelectedRole);
             }
         }
 
@@ -58,7 +57,7 @@ namespace ToMi.ViewModel
             {
                 _middleName = value;
                 OnPropertyChanged();
-                CheckFields();
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(Address) && !string.IsNullOrEmpty(PhoneNumber) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(RepeatPassword) && !string.IsNullOrEmpty(SelectedRole);
             }
         }
 
@@ -69,7 +68,7 @@ namespace ToMi.ViewModel
             {
                 _address = value;
                 OnPropertyChanged();
-                CheckFields();
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(MiddleName) && !string.IsNullOrEmpty(PhoneNumber) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(RepeatPassword) && !string.IsNullOrEmpty(SelectedRole);
             }
         }
 
@@ -80,7 +79,7 @@ namespace ToMi.ViewModel
             {
                 _phoneNumber = value;
                 OnPropertyChanged();
-                CheckFields();
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(MiddleName) && !string.IsNullOrEmpty(Address) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(RepeatPassword) && !string.IsNullOrEmpty(SelectedRole);
             }
         }
 
@@ -91,7 +90,7 @@ namespace ToMi.ViewModel
             {
                 _password = value;
                 OnPropertyChanged();
-                CheckFields();
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(MiddleName) && !string.IsNullOrEmpty(Address) && !string.IsNullOrEmpty(PhoneNumber) && !string.IsNullOrEmpty(RepeatPassword) && !string.IsNullOrEmpty(SelectedRole);
             }
         }
 
@@ -102,7 +101,7 @@ namespace ToMi.ViewModel
             {
                 _repeatPassword = value;
                 OnPropertyChanged();
-                CheckFields();
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(MiddleName) && !string.IsNullOrEmpty(Address) && !string.IsNullOrEmpty(PhoneNumber) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(SelectedRole);
             }
         }
 
@@ -114,13 +113,36 @@ namespace ToMi.ViewModel
                 _selectedRole = value;
                 OnPropertyChanged();
                 SelectedRoleChanged?.Invoke(this, value);
+                IsEnabled = !string.IsNullOrEmpty(value) && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(MiddleName) && !string.IsNullOrEmpty(Address) && !string.IsNullOrEmpty(PhoneNumber) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(RepeatPassword);
             }
         }
 
         public bool IsEnabled
         {
             get => _isEnabled;
-            set => SetProperty(ref _isEnabled, value);
+            set => _isEnabled = value;
+        }
+
+        public bool IsClientCheked
+        {
+            get => _isClientCheked;
+            set
+            {
+                _isClientCheked = value;
+                OnPropertyChanged();
+                IsEmployeeChecked = !value;
+            }
+        }
+
+        public bool IsEmployeeChecked
+        {
+            get => _isEmployeeChecked;
+            set
+            {
+                _isEmployeeChecked = value;
+                OnPropertyChanged();
+                IsClientCheked = !value;
+            }
         }
 
         public ICommand RegisterCommand { get; }
@@ -129,11 +151,9 @@ namespace ToMi.ViewModel
         public RegistrationVM()
         {
             RegisterCommand = new Command(async () => await OnRegisterAsync());
-            NavigateToAutorization = new Command(async () => await NavigateCommandAsync()); 
+            NavigateToAutorization = new Command(async () => await NavigateCommandAsync());
             IsEnabled = false;
         }
-
-        public RadioButtonViewModel RadioButtonViewModel { get; set; } = new RadioButtonViewModel();
 
         private async Task OnRegisterAsync()
         {
@@ -155,21 +175,22 @@ namespace ToMi.ViewModel
 
         private async Task<bool> CheckIfUserExistsAsync(string phoneNumber)
         {
-            using (var dbContext = new AutorizationDbContext())
+            using var dbContext = new AutorizationDbContext();
+            try
             {
-                var existingUser = await dbContext.users.FirstOrDefaultAsync(u => u.phone_number == phoneNumber);
-                return existingUser != null;
+                return await dbContext.users.AnyAsync(u => u.phone_number == phoneNumber);
+            }
+            catch (Exception ex)
+            {
+                // Обработайте исключение, например, покажите сообщение об ошибке пользователю
+                await Application.Current.MainPage.DisplayAlert("Ошибка", $"Не удалось проверить existence пользователя: {ex.Message}", "ОК");
+                return false;
             }
         }
 
         private async Task<bool> ValidatePasswordsAsync()
         {
-            if (Password != RepeatPassword)
-            {
-                await Application.Current.MainPage.DisplayAlert("Ошибка", "Пароли не совпадают", "ОК");
-                return false;
-            }
-            return true;
+            return Password == RepeatPassword;
         }
 
         private User CreateUser()
@@ -186,21 +207,18 @@ namespace ToMi.ViewModel
             };
         }
 
-        private async Task SaveUserAsync(User user)
+        private async Task SaveUserAsync(User user) 
         {
-            using (var dbContext = new AutorizationDbContext())
+            using var dbContext = new AutorizationDbContext();
+            try
             {
-                var existingUser = await dbContext.users
-               .FirstOrDefaultAsync(u => u.phone_number == user.phone_number);
-
-                if (existingUser != null)
-                {
-                    await Application.Current.MainPage.DisplayAlert("Ошибка", "Пользователь с таким номером телефона уже зарегистрирован", "ОК");
-                    return;
-                }
-
-                dbContext.users.Add(user);
+                await dbContext.users.AddAsync(user);
                 await dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                // Обработайте исключение, например, покажите сообщение об ошибке пользователю
+                await Application.Current.MainPage.DisplayAlert("Ошибка", $"Не удалось сохранить пользователя: {ex.Message}", "ОК");
             }
         }
 
@@ -215,31 +233,9 @@ namespace ToMi.ViewModel
 
         private async Task NavigateCommandAsync()
         {
-            await Task.Delay(1); // Добавляем задержку, чтобы страница успела загрузиться
             Application.Current.MainPage = new Autorization();
         }
 
-        private void SetProperty<T>(ref T field, T value, [CallerMemberName] string propertyName = "")
-        {
-            if (EqualityComparer<T>.Default.Equals(field, value))
-            {
-                return;
-            }
-            field = value;
-            OnPropertyChanged(propertyName);
-        }
-
-        private void CheckFields()
-        {
-            IsEnabled = !string.IsNullOrEmpty(FirstName) &&
-                       !string.IsNullOrEmpty(LastName) &&
-                       !string.IsNullOrEmpty(MiddleName) &&
-                       !string.IsNullOrEmpty(Address) &&
-                       !string.IsNullOrEmpty(PhoneNumber) &&
-                       !string.IsNullOrEmpty(Password) &&
-                       !string.IsNullOrEmpty(RepeatPassword) &&
-                       !string.IsNullOrEmpty(SelectedRole);
-        }
         public event EventHandler<string> SelectedRoleChanged;
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
